@@ -1,0 +1,10 @@
+<% @posts.each do |post| %>
+  <div class="card m-2" style="width: 18rem;">
+    <img src="..." class="card-img-top" >
+    <div class="card-body">
+      <h5 class="card-title"><%= post.title %></h5>
+      <p class="card-text"><%= post.content %></p>
+      <a href="#" class="btn btn-primary">編集</a>
+    </div>
+  </div>
+<% end %>
