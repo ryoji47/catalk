@@ -1,0 +1,28 @@
+<section class="py-5 text-center container bg-light">
+  <div class="row py-lg-5">
+    <div class="col-lg-6 col-md-8 mx-auto">
+      <h1 class="fw-light text-warning">🐈‍⬛ Cattalkへようこそ！🐈‍⬛</h1>
+      <p class="lead text-muted">Catalk🐈‍⬛は自分の猫ちゃんの記録を残したり、他の猫好き同士で共有しあったりできるサービスです。技術力不足で実装できていないところも多々ありますがアップデートしていきたいです。</p>
+    </div>
+  </div>
+</section>
+
+<div class="texts-wrapper">
+   <div class="contents-title text-center mt-2">
+      <h3>投稿一覧</h3>
+      <div class="row">
+        <% @posts.each do |post| %>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card m-2 h-100 ">
+              <%= image_tag(post.image) %>
+               <div class="card-body">
+                  <h5 class="card-title"><%= post.title %></h5>
+                  <p class="card-text"><%= post.content %></p>
+                  <%= link_to "詳細", post_path(post.id), class: 'btn btn-primary' %>
+               </div>
+            </div>
+          </div>
+        <% end %>
+     </div>
+   </div>
+ </div> 

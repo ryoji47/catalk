@@ -1,24 +1,27 @@
-# README
+# アプリケーション名
+Catalk
+# アプリケーション概要
+猫の写真や日常を好きな人同士で共有できるサービス
+# URL
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# テスト用アカウント
 
-Things you may want to cover:
+# 利用方法
 
-* Ruby version
+# アプリケーションを作成した背景
 
-* System dependencies
+# 洗い出した要件
 
-* Configuration
+# 実装した機能についての画像やGIFおよびその説明
 
-* Database creation
+# 実装予定の機能
 
-* Database initialization
+# データベース設計
+[![Image from Gyazo](https://i.gyazo.com/6b68e3ac10fae5a3cd99470809d746d2.png)](https://gyazo.com/6b68e3ac10fae5a3cd99470809d746d2)
+# 画面遷移図
+[![Image from Gyazo](https://i.gyazo.com/a927cfcb68875718075d50929d799043.png)](https://gyazo.com/a927cfcb68875718075d50929d799043)
+# 開発環境
 
-* How to run the test suite
+# ローカルでの動作方法
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# 工夫したポイント

@@ -1,0 +1,22 @@
+<div>
+  <div class="col-md-4 offset-md-4">
+    <h2 class="text-center pt-5">新規投稿🐈‍⬛</h2>
+    <%= form_with(model:@post, local: true) do |f| %>
+      <%= render 'shared/error_messages', object: f.object %>
+      <div class="form-group" >
+        <%= f.file_field :image, placeholder: "ka", class: "form-control" %>
+      </div>
+      <div class="form_group pt-4 pb-3">
+        <%= f.text_field :title, placeholder: "タイトル", class: "form-control" %>
+      </div>
+
+      <div class="form-group" >
+        <%= f.text_area :content, placeholder: "内容", rows: 7, class: "form-control" %>
+      </div>
+
+      <div class="text-center"> 
+        <%= f.submit "投稿", class: "btn btn-primary mt-2" %>
+      </div>
+    <% end %>
+  </div>
+</div>
