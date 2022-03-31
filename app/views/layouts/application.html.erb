@@ -21,20 +21,30 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav me-auto">
+              <% if user_signed_in? %>
               <li class="nav-item">
-                <a class="nav-link" href="/posts/new">投稿</a>
+                <%= link_to current_user.nickname, edit_user_path(current_user), class: "nav-link" %>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "nav-link"%>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <%= link_to "投稿", new_post_path, class: "nav-link"%>
+              </li>
+              <% else %>
+              <li class="nav-item">
+                <%= link_to "新規登録", new_user_registration_path, class: "nav-link"%>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <%= link_to "ログイン", new_user_session_path, class: "nav-link"%>
               </li>
+              <% end %>
             </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
           </div>
         </div>
       </nav>

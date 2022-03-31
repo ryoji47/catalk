@@ -15,6 +15,8 @@ Catalk
 # 実装した機能についての画像やGIFおよびその説明
 
 # 実装予定の機能
+・deviseで実装したユーザー管理機能のレスポンシブ対応
+　直接CSSを変更しての対応を検討中です。
 
 # データベース設計
 [![Image from Gyazo](https://i.gyazo.com/6b68e3ac10fae5a3cd99470809d746d2.png)](https://gyazo.com/6b68e3ac10fae5a3cd99470809d746d2)

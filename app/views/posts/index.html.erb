@@ -2,7 +2,7 @@
   <div class="row py-lg-5">
     <div class="col-lg-6 col-md-8 mx-auto">
       <h1 class="fw-light text-warning">🐈‍⬛ Cattalkへようこそ！🐈‍⬛</h1>
-      <p class="lead text-muted">Catalk🐈‍⬛は自分の猫ちゃんの記録を残したり、他の猫好き同士で共有しあったりできるサービスです。技術力不足で実装できていないところも多々ありますがアップデートしていきたいです。</p>
+      <p class="lead text-muted">Catalk🐈‍⬛は自分の猫ちゃんの記録を残したり、他の猫好き同士で共有しあったりできるサービスです。（登録するお名前は猫ちゃんのお名前をお勧めしています。）</p>
     </div>
   </div>
 </section>
@@ -18,6 +18,7 @@
                <div class="card-body">
                   <h5 class="card-title"><%= post.title %></h5>
                   <p class="card-text"><%= post.content %></p>
+                  
                   <%= link_to "詳細", post_path(post.id), class: 'btn btn-primary' %>
                </div>
             </div>

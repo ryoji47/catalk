@@ -7,4 +7,7 @@ class Post < ApplicationRecord
   validates :image, presence: { message: 'を添付してください' }
   
   has_one_attached :image
+
+  belongs_to :user
+  has_many :comments
 end
