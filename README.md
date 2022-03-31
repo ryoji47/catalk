@@ -3,9 +3,11 @@ Catalk
 # アプリケーション概要
 猫の写真や日常を好きな人同士で共有できるサービス
 # URL
-
+https://catalk-app.herokuapp.com/
 # テスト用アカウント
-
+あずき
+Email: :test@test.com
+Pass:  :qqq111
 # 利用方法
 
 # アプリケーションを作成した背景
