@@ -27,6 +27,9 @@ Pass:  :qqq111
 ・スマホで投稿した写真のサイズの変更
 　投稿自体は問題なく出来ているが、サイズが大きすぎるので
 　調整を検討中です。cssがうまくSafari上で適応されていない可能性があります。
+
+・詳細ページのレイアウト
+　
 # データベース設計
 [![Image from Gyazo](https://i.gyazo.com/6b68e3ac10fae5a3cd99470809d746d2.png)](https://gyazo.com/6b68e3ac10fae5a3cd99470809d746d2)
 # 画面遷移図
