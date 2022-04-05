@@ -29,7 +29,8 @@ Pass:  :qqq111
 　調整を検討中です。cssがうまくSafari上で適応されていない可能性があります。
 
 ・詳細ページのレイアウト
-　
+　実装自体はできたが、横並びにできていないので
+　調整を検討中です。
 # データベース設計
 [![Image from Gyazo](https://i.gyazo.com/6b68e3ac10fae5a3cd99470809d746d2.png)](https://gyazo.com/6b68e3ac10fae5a3cd99470809d746d2)
 # 画面遷移図
