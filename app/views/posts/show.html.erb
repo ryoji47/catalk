@@ -1,18 +1,39 @@
 <div class="texts-wrapper">
-    <div class="contents-title text-center mt-2">
-      <h3>詳細ページ</h3>
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card m-2 h-100 ">
-            <%= image_tag(@post.image) %>
-              <div class="card-body">
-                <h5 class="card-title"><%= @post.title %></h5>
-                <p class="card-text"><%= @post.content %></p>
-                <%= link_to "編集", edit_post_path(@post.id), class: 'btn btn-primary' %>
-                <%= link_to "削除", post_path(@post.id), method: :delete, class: 'btn btn-primary' %>
-              </div>
-          </div>
-        </div>
+  <div class="contents-title text-center mt-2">
+    <h3>詳細ページ</h3>
+  </div>
+</div>
+<div class="col-12 col-md-6 col-lg-4">
+  <div class="card-deck">
+    <div class="card m-2">
+      <%= image_tag @post.image, class:"card-img-top img-rounded img-responsive h-100" %>
+      <div class="card-body text-center">
+        <h5 class="card-title"><%= @post.title %></h5>
+        <p class="card-text"><%= @post.content %></p>
+        <% if user_signed_in? && current_user.id == @post.user_id %>
+        <%= link_to "編集", edit_post_path(@post.id), class: 'btn btn-primary' %>
+        <%= link_to "削除", post_path(@post.id), method: :delete, class: 'btn btn-primary' %>
+        <% else %>
+        <% end %>
       </div>
     </div>
+    <div class="card m-2">
+      <%= form_with(model: [@post, @comment], local: true) do |f| %>
+        <div class="form-group" >
+          <%= f.text_area :text, placeholder: "コメントしてね", rows: 2, class: "form-control" %>
+        </div>
+        <div class="text-center"> 
+          <%= f.submit "投稿", class: "btn btn-primary mt-2" %>
+        </div>
+      <% end %>
+      <h5 class="contents-title text-left mt-2">＜コメント一覧＞</h5>
+      <% @comments.each do |comment| %>
+        <p class="card-text text-left mt-1 ms-1">
+          <strong><%= link_to comment.user.nickname, "#" %>：</strong>
+          <%= comment.text %>
+        </p>
+      <% end %>
+    </div>
+  </div>
 </div>
+
