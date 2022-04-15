@@ -70,6 +70,8 @@ Pass:  :qqq111
   現状ではURLの直打ちで他のユーザーの編集ページに飛べてしまうので、
   コントローラーに記述することで対策を検討中です。
 
+8. 検索機能
+  自分でsearchメソッドを定義して実装を検討中です。
 
 # データベース設計
 [![Image from Gyazo](https://i.gyazo.com/6b68e3ac10fae5a3cd99470809d746d2.png)](https://gyazo.com/6b68e3ac10fae5a3cd99470809d746d2)
